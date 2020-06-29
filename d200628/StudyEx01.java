@@ -1,37 +1,35 @@
 package d200628;
 
 /*
- * 1¹ø - ¹®Á¦
- * ÀÚ¹Ù Å¬·¡½º¸¦ ÀÛ¼ºÇÏ´Â ¿¬½ÀÀ» ÇØº¸ÀÚ. 
- * ´ÙÀ½ main() ¸Ş¼Òµå¸¦ ½ÇÇàÇÏ¿´À» ¶§ ¿¹½Ã¿Í °°ÀÌ Ãâ·ÂµÇµµ·Ï TV Å¬·¡½º¸¦ ÀÛ¼ºÇÏ¶ó.
-   public static void main(String[] args) {
-   TV myTV = new TV("LG", 2017, 32); //LG¿¡¼­ ¸¸µç 2017³â 32ÀÎÄ¡
-   myTV.show();
-}
-LG¿¡¼­ ¸¸µç 2017³âÇü 32ÀÎÄ¡ TV
+ * 1ë²ˆ - ë¬¸ì œ
+ * ìë°” í´ë˜ìŠ¤ë¥¼ ì‘ì„±í•˜ëŠ” ì—°ìŠµì„ í•´ë³´ì. 
+ * ë‹¤ìŒ main() ë©”ì†Œë“œë¥¼ ì‹¤í–‰í•˜ì˜€ì„ ë•Œ ì˜ˆì‹œì™€ ê°™ì´ ì¶œë ¥ë˜ë„ë¡ TV í´ë˜ìŠ¤ë¥¼ ì‘ì„±í•˜ë¼.
+	   public static void main(String[] args) {
+	   TV myTV = new TV("LG", 2017, 32); //LGì—ì„œ ë§Œë“  2017ë…„ 32ì¸ì¹˜
+	   myTV.show();
+	}
+	LGì—ì„œ ë§Œë“  2017ë…„í˜• 32ì¸ì¹˜ TV
  */
 
 class TV {
-	private String company;
-	private int year;
-	private int size;
-	
+	public String company;
+	public int year;
+	public int size;
+
 	public TV(String company, int year, int size) {
 		this.company = company;
 		this.year = year;
 		this.size = size;
 	}
-	
-	public void show() {
-		System.out.println(company + "¿¡¼­ ¸¸µç " + year + "³âÇü " + size + "ÀÎÄ¡ TV");
+
+	public void TvPrint() {
+		System.out.println(company + "ì—ì„œ ë§Œë“  " + year + "ë…„í˜• " + size + "ì¸ì¹˜ TV");
 	}
 }
 
 public class StudyEx01 {
-
 	public static void main(String[] args) {
 		TV myTV = new TV("LG", 2017, 32);
-		myTV.show();
+		myTV.TvPrint();
 	}
-
 }
